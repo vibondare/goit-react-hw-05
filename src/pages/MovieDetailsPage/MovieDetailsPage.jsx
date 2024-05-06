@@ -8,7 +8,7 @@ export default function MovieDetailsPage() {
   const [movieDetails, setMovieDetails] = useState(null);
   const [error, setError] = useState(false);
   const location = useLocation();
-  const backLinkHref = location.state ?? "/movies";
+  const backLinkHref = location.state ?? "/";
 
   useEffect(() => {
     async function getMovieDetails() {
@@ -50,8 +50,8 @@ export default function MovieDetailsPage() {
             </div>
           </div>
           <div className={css.castAndReviewsLinks}>
-            <Link to='cast' state={location}>Cast</Link>
-            <Link to='reviews' state={location}>Reviews</Link>
+            <Link to='cast' state={location.state}>Cast</Link>
+            <Link to='reviews' state={location.state}>Reviews</Link>
           </div>
           <Outlet />
         </div>
