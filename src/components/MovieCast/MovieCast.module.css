@@ -1,0 +1,18 @@
+.actorsList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.actorsListItem {
+  border: 2px solid #000;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.actorText {
+    padding: 12px;
+}

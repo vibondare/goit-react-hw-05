@@ -1,0 +1,33 @@
+body {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  box-sizing: border-box;
+  width: 1128px;
+  margin: 16px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* h1, h2, h3, h4, h5, h6,  */
+
+/* p {
+  margin: 0;
+} */
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  cursor: pointer;
+}

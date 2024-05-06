@@ -1,0 +1,20 @@
+.movieDetailsContainer {
+    margin-top: 24px;
+}
+
+.movieBasicDetailsContainer {
+    display: flex;
+    gap: 24px;
+}
+
+.castAndReviewsLinks {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.genresList {
+    display: flex;
+    gap: 12px;
+}
