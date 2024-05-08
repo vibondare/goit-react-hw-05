@@ -8,11 +8,11 @@ import { useSearchParams } from "react-router-dom";
 export default function MoviesPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [searchedFilms, setSearchedFilms] = useState(null);
-  const [query, setQuery] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
   const urlQuery = searchParams.get("query") ?? "";
-  
+  const [query, setQuery] = useState(urlQuery ?? "");
+
   const handleChange = (value) => {
     setSearchParams({ query: value });
   };
